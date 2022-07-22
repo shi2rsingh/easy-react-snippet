@@ -1,0 +1,42 @@
+{
+    "name": "easy-react-snippet",
+    "displayName": "Easy React Snippet",
+    "description": "Intuitive React Snippet that are easy to recall and use",
+    "publisher": "Shishir Singh",
+    "preview": true,
+    "version": "0.0.1",
+    "icon": "images/ERS.jpg",
+    "author": {
+        "name": "Shishir Singh"
+      },
+    "engines": {
+        "vscode": "^0.10.0"
+    },
+    "categories": [
+        "Snippets",
+        "Programming Languages"
+    ],
+    "keywords": [
+        "React", "ReactJS", "Snippet", "React Hooks"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/snippets.code-snippets"
+            },
+            {
+                "language": "javascriptreact",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/shi2rsingh/easy-react-snippet.git"
+    },
+    "homepage": "https://github.com/shi2rsingh/easy-react-snippet/blob/main/README.md",
+    "bugs": {
+        "url": "https://github.com/shi2rsingh/easy-react-snippet/issues"
+    }
+}
