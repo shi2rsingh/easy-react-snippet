@@ -2,9 +2,9 @@
     "name": "easy-react-snippet",
     "displayName": "Easy React Snippet",
     "description": "Intuitive React Snippet that are easy to recall and use",
-    "publisher": "Shishir Singh",
+    "publisher": "ShishirSingh",
     "preview": true,
-    "version": "0.0.1",
+    "version": "0.1.0",
     "icon": "images/ERS.jpg",
     "author": {
         "name": "Shishir Singh"

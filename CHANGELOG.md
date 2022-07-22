@@ -2,6 +2,10 @@
 
 All notable changes to the "easy-react-snippet" extension will be documented in this file.
 
+## [Unreleased]
+
+- Suspense
+
 ## [v0.0.1]
 
 - Initial release
