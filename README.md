@@ -62,3 +62,5 @@ You don't need to remember even just use `hooks`, `comp` or `lcm` for a broad li
 | `hoc`, `comp`     | Higher Order Component                        |
 | `cp`              | Context Provider                              |
 | `cpf`             | Class Property Function                       |
+| `lazy`            | React Lazy Import                             |
+| `sus`             | React Suspense                                |
