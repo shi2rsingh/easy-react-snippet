@@ -3,7 +3,8 @@
     "displayName": "Easy React Snippet",
     "description": "Intuitive React Snippet that are easy to recall and use",
     "publisher": "ShishirSingh",
-    "version": "0.1.1",
+    "version": "0.1.2",
+    "license" : "BSD-3-Clause",
     "icon": "images/ERS.jpg",
     "author": {
         "name": "Shishir Singh"
