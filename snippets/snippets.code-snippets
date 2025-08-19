@@ -255,7 +255,7 @@
 	},
 	"useReducer": {
 		"prefix": [
-			"ur",
+			"urd",
 			"hooks"
 		],
 		"body": [

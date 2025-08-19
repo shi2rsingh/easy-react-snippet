@@ -1,0 +1,564 @@
+{
+    "Import Module": {
+        "prefix": "im",
+        "body": [
+            "import $2 from '$1';\n"
+        ],
+        "description": "Import Module"
+    },
+    "Import React": {
+        "prefix": "ir",
+        "body": [
+            "import React from 'react';\n"
+        ],
+        "description": "Import React"
+    },
+    "Import React and Component": {
+        "prefix": "irc",
+        "body": [
+            "import React, { Component } from 'react';\n"
+        ],
+        "description": "Import React, { Component }"
+    },
+    "Import ReactDOM": {
+        "prefix": "ird",
+        "body": [
+            "import * as ReactDOM from 'react-dom';\n"
+        ],
+        "description": "Import ReactDOM"
+    },
+    "Import ReactDOM Server": {
+        "prefix": "irds",
+        "body": [
+            "import * as ReactDOMServer from 'react-dom/server';\n"
+        ],
+        "description": "Import ReactDOM Server"
+    },
+    "Import ReactDOM Client": {
+        "prefix": "irdc",
+        "body": [
+            "import * as ReactDOM from 'react-dom/client';\n"
+        ],
+        "description": "Import ReactDOM Client"
+    },
+    "Import React, { useState }": {
+        "prefix": "irs",
+        "body": [
+            "import React, { useState } from 'react';\n"
+        ],
+        "description": "Import React, { useState }"
+    },
+    "Import React, { useEffect }": {
+        "prefix": "ire",
+        "body": [
+            "import React, { useEffect } from 'react';\n"
+        ],
+        "description": "Import React, { useEffect }"
+    },
+    "Import { useState }": {
+        "prefix": "is",
+        "body": [
+            "import { useState } from 'react';\n"
+        ],
+        "description": "Import { useState }"
+    },
+    "Import { useEffect }": {
+        "prefix": "ie",
+        "body": [
+            "import { useEffect } from 'react';\n"
+        ],
+        "description": "Import { useEffect }"
+    },
+    "Import React, { useState, useEffect }": {
+        "prefix": "irse",
+        "body": [
+            "import React, { useState, useEffect } from 'react';\n"
+        ],
+        "description": "Import React, { useState, useEffect }"
+    },
+    "Default Class Component": {
+        "prefix": [
+            "ccd",
+            "comp"
+        ],
+        "body": [
+            "interface ${1:${TM_FILENAME_BASE}}Props {",
+            "\t$2",
+            "}",
+            "",
+            "interface ${1:${TM_FILENAME_BASE}}State {",
+            "\t$3",
+            "}",
+            "",
+            "class ${1:${TM_FILENAME_BASE}} extends Component<${1:${TM_FILENAME_BASE}}Props, ${1:${TM_FILENAME_BASE}}State> {",
+            "\tstate = { $4 }",
+            "",
+            "\trender() {",
+            "\t\treturn ($0);",
+            "\t}",
+            "}",
+            "",
+            "export default $1;"
+        ],
+        "description": "Class Component with default export"
+    },
+    "Default Class Component With Constructor": {
+        "prefix": [
+            "cccd",
+            "comp"
+        ],
+        "body": [
+            "interface ${1:${TM_FILENAME_BASE}}Props {",
+            "\t$2",
+            "}",
+            "",
+            "interface ${1:${TM_FILENAME_BASE}}State {",
+            "\t$3",
+            "}",
+            "",
+            "class ${1:${TM_FILENAME_BASE}} extends Component<${1:${TM_FILENAME_BASE}}Props, ${1:${TM_FILENAME_BASE}}State> {",
+            "\tconstructor(props: ${1:${TM_FILENAME_BASE}}Props) {",
+            "\t\tsuper(props);",
+            "\t}",
+            "",
+            "\tstate = { $4 }",
+            "",
+            "\trender() {",
+            "\t\treturn ($0);",
+            "\t}",
+            "}",
+            "",
+            "export default $1;"
+        ],
+        "description": "Class Component With Constructor and default export"
+    },
+    "Class Component": {
+        "prefix": [
+            "cc",
+            "comp"
+        ],
+        "body": [
+            "interface ${1:${TM_FILENAME_BASE}}Props {",
+            "\t$2",
+            "}",
+            "",
+            "interface ${1:${TM_FILENAME_BASE}}State {",
+            "\t$3",
+            "}",
+            "",
+            "class ${1:${TM_FILENAME_BASE}} extends Component<${1:${TM_FILENAME_BASE}}Props, ${1:${TM_FILENAME_BASE}}State> {",
+            "\tstate = { $4 }",
+            "",
+            "\trender() {",
+            "\t\treturn ($0);",
+            "\t}",
+            "}",
+            "",
+            "export { $1 };"
+        ],
+        "description": "Class Component"
+    },
+    "Class Component With Constructor": {
+        "prefix": [
+            "ccc",
+            "comp"
+        ],
+        "body": [
+            "interface ${1:${TM_FILENAME_BASE}}Props {",
+            "\t$2",
+            "}",
+            "",
+            "interface ${1:${TM_FILENAME_BASE}}State {",
+            "\t$3",
+            "}",
+            "",
+            "class ${1:${TM_FILENAME_BASE}} extends Component<${1:${TM_FILENAME_BASE}}Props, ${1:${TM_FILENAME_BASE}}State> {",
+            "\tconstructor(props: ${1:${TM_FILENAME_BASE}}Props) {",
+            "\t\tsuper(props);",
+            "\t}",
+            "",
+            "\tstate = { $4 }",
+            "",
+            "\trender() {",
+            "\t\treturn ($0);",
+            "\t}",
+            "}",
+            "",
+            "export { $1 };"
+        ],
+        "description": "Class Component With Constructor"
+    },
+    "Default Function Component": {
+        "prefix": [
+            "fcd",
+            "comp"
+        ],
+        "body": [
+            "interface ${1:${TM_FILENAME_BASE}}Props {",
+            "\t$2",
+            "}",
+            "",
+            "const ${1:${TM_FILENAME_BASE}}: React.FC<${1:${TM_FILENAME_BASE}}Props> = ($3) => {",
+            "\treturn ($0);",
+            "}",
+            "",
+            "export default $1;"
+        ],
+        "description": "Default Function Component"
+    },
+    "Function Component": {
+        "prefix": [
+            "fc",
+            "comp"
+        ],
+        "body": [
+            "interface ${1:${TM_FILENAME_BASE}}Props {",
+            "\t$2",
+            "}",
+            "",
+            "const ${1:${TM_FILENAME_BASE}}: React.FC<${1:${TM_FILENAME_BASE}}Props> = ($3) => {",
+            "\treturn ($0);",
+            "}",
+            "",
+            "export { $1 };"
+        ],
+        "description": "Function Component"
+    },
+    "Default Function Syntax Component": {
+        "prefix": ["ffcd", "comp"],
+        "body": [
+            "interface ${1:${TM_FILENAME_BASE}}Props {",
+            "\t$2",
+            "}",
+            "",
+            "function ${1:${TM_FILENAME_BASE}}(props: ${1:${TM_FILENAME_BASE}}Props) {",
+            "\treturn ($0);",
+            "}",
+            "",
+            "export default $1;"
+        ],
+        "description": "Default Function Syntax Component"
+    },
+    "Function Syntax Component": {
+        "prefix": ["ffc", "comp"],
+        "body": [
+            "interface ${1:${TM_FILENAME_BASE}}Props {",
+            "\t$2",
+            "}",
+            "",
+            "function ${1:${TM_FILENAME_BASE}}(props: ${1:${TM_FILENAME_BASE}}Props) {",
+            "\treturn ($0);",
+            "}",
+            "",
+            "export { $1 };"
+        ],
+        "description": "Function Syntax Component"
+    },
+    "useState": {
+        "prefix": ["us", "hooks"],
+        "body": [
+            "const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState<${2:StateType}>($3);"
+        ],
+        "description": "useState Hook with type"
+    },
+    "useEffect": {
+        "prefix": ["ue", "hooks"],
+        "body": [
+            "useEffect(() => {",
+            "\t$1",
+            "}, []);"
+        ],
+        "description": "useEffect Hook"
+    },
+    "useEffect With Return": {
+        "prefix": ["uer", "hooks"],
+        "body": [
+            "useEffect(() => {",
+            "\t$1",
+            "\treturn () => {",
+            "\t\t$2",
+            "\t}",
+            "}, []);"
+        ],
+        "description": "useEffect Hook with return function"
+    },
+    "useContext": {
+        "prefix": ["uct", "hooks"],
+        "body": [
+            "const ${1:value} = useContext<${2:ContextType}>(${3:Context});"
+        ],
+        "description": "useContext React Hook"
+    },
+    "useReducer": {
+        "prefix": ["urd", "hooks"],
+        "body": [
+            "interface ${1:State} {",
+            "\t$2",
+            "};",
+            "",
+            "interface ${3:Action} {",
+            "\ttype: string;",
+            "\tpayload?: any;",
+            "};",
+            "",
+            "const [${4:state}, ${5:dispatch}] = useReducer<Reducer<${1:State}, ${3:Action}>>(${6:reducer}, ${7:initialState});"
+        ],
+        "description": "useReducer React Hook"
+    },
+    "useCallback": {
+        "prefix": ["ucb", "hooks"],
+        "body": [
+            "const ${1:callback} = useCallback((${2:params}: ${3:ParamsType}) => {",
+            "\t$4",
+            "}, [${5:deps}]);"
+        ],
+        "description": "useCallback React Hook"
+    },
+    "useRef": {
+        "prefix": ["ur", "hooks"],
+        "body": [
+            "const ${1:ref} = useRef<${2:HTMLElement}>(${3:null});"
+        ],
+        "description": "useRef Hook with type"
+    },
+    "useDeferredValue": {
+        "prefix": ["udv", "hooks"],
+        "body": [
+            "const ${1:deferredValue} = useDeferredValue<${2:Type}>(${3:value});"
+        ],
+        "description": "useDeferredValue React Hook"
+    },
+    "useTransition": {
+        "prefix": ["ut", "hooks"],
+        "body": [
+            "const [isPending, startTransition] = useTransition();"
+        ],
+        "description": "useTransition React Hook"
+    },
+    "useId": {
+        "prefix": ["ui", "hooks"],
+        "body": [
+            "const ${1:id} = useId();",
+            "$0"
+        ],
+        "description": "useId React Hook"
+    },
+    "componentDidMount": {
+        "prefix": ["cdm","lcm"],
+        "body": [
+            "componentDidMount() {",
+            "\t$0",
+            "}"
+        ],
+        "description": "componentDidMount"
+    },
+    "componentWillMount": {
+        "prefix": ["cwm","lcm"],
+        "body": [
+            "componentWillMount() {",
+            "\t$0",
+            "}"
+        ],
+        "description": "componentWillMount"
+    },
+    "componentWillReceiveProps": {
+        "prefix": ["cwrp","lcm"],
+        "body": [
+            "componentWillReceiveProps(nextProps: ${1:${TM_FILENAME_BASE}}Props) {",
+            "\t$0",
+            "}"
+        ],
+        "description": "componentWillReceiveProps"
+    },
+    "getDerivedStateFromProps": {
+        "prefix": ["gds","lcm"],
+        "body": [
+            "static getDerivedStateFromProps(nextProps: ${1:${TM_FILENAME_BASE}}Props, prevState: ${1:${TM_FILENAME_BASE}}State) {",
+            "\treturn null;",
+            "}"
+        ],
+        "description": "getDerivedStateFromProps"
+    },
+    "shouldComponentUpdate": {
+        "prefix": ["scu","lcm"],
+        "body": [
+            "shouldComponentUpdate(nextProps: ${1:${TM_FILENAME_BASE}}Props, nextState: ${1:${TM_FILENAME_BASE}}State) {",
+            "\treturn true;",
+            "}"
+        ],
+        "description": "shouldComponentUpdate"
+    },
+    "componentWillUpdate": {
+        "prefix": ["cwu","lcm"],
+        "body": [
+            "componentWillUpdate(nextProps: ${1:${TM_FILENAME_BASE}}Props, nextState: ${1:${TM_FILENAME_BASE}}State) {",
+            "\t$0",
+            "}"
+        ],
+        "description": "componentWillUpdate"
+    },
+    "componentDidUpdate": {
+        "prefix": ["cdu","lcm"],
+        "body": [
+            "componentDidUpdate(prevProps: ${1:${TM_FILENAME_BASE}}Props, prevState: ${1:${TM_FILENAME_BASE}}State, snapshot?: any) {",
+            "\t$0",
+            "}"
+        ],
+        "description": "componentDidUpdate"
+    },
+    "componentWillUnmount": {
+        "prefix": ["cwn","lcm"],
+        "body": [
+            "componentWillUnmount() {",
+            "\t$0",
+            "}"
+        ],
+        "description": "componentWillUnmount"
+    },
+    "componentDidCatch": {
+        "prefix": ["cdc","lcm"],
+        "body": [
+            "componentDidCatch(error: any, info: any) {",
+            "\t$0",
+            "}"
+        ],
+        "description": "componentDidCatch"
+    },
+    "getSnapshotBeforeUpdate": {
+        "prefix": ["gsbu","lcm"],
+        "body": [
+            "getSnapshotBeforeUpdate(prevProps: ${1:${TM_FILENAME_BASE}}Props, prevState: ${1:${TM_FILENAME_BASE}}State) {",
+            "\t$0",
+            "}"
+        ],
+        "description": "getSnapshotBeforeUpdate"
+    },
+    "setState": {
+        "prefix": "ss",
+        "body": [
+            "this.setState({ $1: $2 });"
+        ],
+        "description": "setState"
+    },
+    "Functional setState": {
+        "prefix": "ssf",
+        "body": [
+            "this.setState((prevState: ${1:${TM_FILENAME_BASE}}State) => {",
+            "\treturn { $2: prevState.$2 };",
+            "});"
+        ],
+        "description": "Functional setState"
+    },
+    "render": {
+        "prefix": "ren",
+        "body": [
+            "render() {",
+            "\treturn (",
+            "\t\t $0",
+            "\t);",
+            "}"
+        ],
+        "description": "render"
+    },
+    "Render Prop": {
+        "prefix": [
+            "renprop",
+            "comp"
+        ],
+        "body": [
+            "interface ${1:${TM_FILENAME_BASE}}Props {",
+            "\t$2",
+            "}",
+            "",
+            "interface ${1:${TM_FILENAME_BASE}}State {",
+            "\t$3",
+            "}",
+            "",
+            "class ${1:${TM_FILENAME_BASE}} extends Component<${1:${TM_FILENAME_BASE}}Props, ${1:${TM_FILENAME_BASE}}State> {",
+            "\tstate = { $4: $5 }",
+            "\trender() { ",
+            "\t\treturn this.props.render({",
+            "\t\t\t$4: this.state.$4",
+            "\t\t});",
+            "\t}",
+            "}",
+            "",
+            "export default $1;"
+        ],
+        "description": "Render Prop"
+    },
+    "Context Provider": {
+        "prefix": "cp",
+        "body": [
+            "interface ${1:Context}Type {",
+            "\t$2",
+            "}",
+            "",
+            "export const $1 = React.createContext<${1:Context}Type | undefined>(undefined);",
+            "",
+            "interface ${1:Context}ProviderProps {",
+            "\tchildren: React.ReactNode;",
+            "}",
+            "",
+            "const $1Provider: React.FC<${1:Context}ProviderProps> = ({ children }) => {",
+            "\t$LINE_COMMENT Initial Provider State",
+            "\tconst state = {};",
+            "",
+            "\treturn (",
+            "\t\t<$1.Provider value={state}>",
+            "\t\t\t{children}",
+            "\t\t</$1.Provider>",
+            "\t);",
+            "}",
+            "",
+            "export default $1Provider;"
+        ],
+        "description": "Context Provider with TypeScript"
+    },
+    "Higher Order Component": {
+        "prefix": ["hoc", "comp"],
+        "body": [
+            "interface ${1:HOC}Props {",
+            "\t$2",
+            "}",
+            "",
+            "function ${3:withHOC}<P extends object>(WrappedComponent: React.ComponentType<P>) {",
+            "\treturn class extends Component<P & ${1:HOC}Props> {",
+            "\t\tconstructor(props: P & ${1:HOC}Props) {",
+            "\t\t\tsuper(props);",
+            "\t\t}",
+            "",
+            "\t\trender() {",
+            "\t\t\treturn <WrappedComponent {...this.props} $0/>;",
+            "\t\t}",
+            "\t}",
+            "}"
+        ],
+        "description": "Higher Order Component"
+    },
+    "React Lazy Import": {
+        "prefix": "lazy",
+        "body": [
+            "const $1 = React.lazy(() => import('$2'));\n"
+        ],
+        "description": "React Lazy Import"
+    },
+    "React Suspense": {
+        "prefix": "sus",
+        "body": [
+            "<Suspense fallback={${1:'Loading...'}}>",
+            "\t$0",
+            "</Suspense>"
+        ],
+        "description": "React Suspense"
+    },
+    "Class Property Function": {
+        "prefix": "cpf",
+        "body": [
+            "${1:handler} = (${2:event}: ${3:EventType}): void => {",
+            "\t$0",
+            "};"
+        ],
+        "description": "Class Property Function with TypeScript"
+    }
+}

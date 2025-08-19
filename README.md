@@ -2,15 +2,40 @@
 
 ![easy-react-snippet-logo](images/ERS.jpg)
 
-Easy React Snippet - Intuitive React Snippet that are easy to recall and use
+Easy React Snippet provides intuitive, easy-to-remember snippets for React development. Built with simplicity in mind, it offers commonly used React patterns without overwhelming you with too many options.
 
 ## Features
 
-This extension provides esssential react snippet code which are easy to recall and use, no overload nothing extra.
+This extension provides essential react snippet code which are easy to recall and use, no overload nothing extra.
 You don't need to remember even just use `hooks`, `comp` or `lcm` for a broad list.
 
 ![easy-react-snippet-in-action](images/ERS_IN_ACTION.gif)
 
+## Installation
+
+1. Open VS Code
+2. Press `Ctrl+P` / `Cmd+P` to open the Quick Open dialog
+3. Type `ext install ShishirSingh.easy-react-snippet`
+4. Click install
+
+## Usage
+
+Type any of the following snippet prefixes and press `Tab` to expand them. You can also type broader categories like `hooks`, `comp`, or `lcm` to see all related snippets.
+
+Example:
+
+```javascript
+// Type 'fcd' and press Tab
+const ComponentName = () => {
+    return (
+        <div>
+            
+        </div>
+    );
+};
+
+export default ComponentName;
+```
 
 ## Snippets
 
@@ -64,3 +89,7 @@ You don't need to remember even just use `hooks`, `comp` or `lcm` for a broad li
 | `cpf`             | Class Property Function                       |
 | `lazy`            | React Lazy Import                             |
 | `sus`             | React Suspense                                |
+
+## Contributing
+
+Feel free to open issues to suggest new snippets or improvements!

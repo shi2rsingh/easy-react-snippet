@@ -3,7 +3,7 @@
     "displayName": "Easy React Snippet",
     "description": "Intuitive React Snippet that are easy to recall and use",
     "publisher": "ShishirSingh",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "license" : "BSD-3-Clause",
     "icon": "images/ERS.jpg",
     "author": {
@@ -17,7 +17,12 @@
         "Programming Languages"
     ],
     "keywords": [
-        "React", "ReactJS", "Snippet", "React Hooks"
+        "React",
+        "ReactJS",
+        "Snippet",
+        "React Hooks",
+        "TypeScript",
+        "TSX"
     ],
     "contributes": {
         "snippets": [
@@ -28,6 +33,14 @@
             {
                 "language": "javascriptreact",
                 "path": "./snippets/snippets.code-snippets"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/typescript.code-snippets"
+            },
+            {
+                "language": "typescriptreact",
+                "path": "./snippets/typescript.code-snippets"
             }
         ]
     },

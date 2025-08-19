@@ -2,6 +2,11 @@
 
 All notable changes to the "easy-react-snippet" extension will be documented in this file.
 
+## [v0.2.0]
+
+- Added TypeScript support with type-aware snippets
+- Updated code `ur` to `urd` for useReducer to avoid conflicts
+
 ## [v0.1.2]
 
 - Added LICENSE
